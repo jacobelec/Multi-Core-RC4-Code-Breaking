@@ -1,4 +1,4 @@
-# Multi-Core RC4 Code Breaking
+# Multi-Core RC4 Code-Breaking
 
 This repository contains the design and implementation of an **RC4 decryption and brute-force cracking circuit**, created as part of the **CPEN 311: Digital Systems Design** course at the **University of British Columbia**.
 
@@ -51,3 +51,30 @@ The project is divided into three main tasks:
 3. Observe and verify contents using the In-System Memory Content Editor
 
 ### Task 2: RC4 Decryption Core
+
+1. Implement KSA and PRGA logic
+2. Use board switches to input the 24-bit key
+3. Store encrypted message in ROM
+4. Decrypt and verify result in RAM using the In-System Editor
+
+### Task 3: Brute-Force Key Cracker
+
+1. Modify the FSM to iterate over all key possibilities
+2. Monitor progress via HEX displays
+3. Use LEDs to indicate when the correct key has been found
+
+---
+
+## Running the Design
+
+1. Open the project in **Quartus**
+2. Compile and generate the bitstream
+3. Program the **DE1-SoC FPGA board**
+4. Set your desired key using the onboard switches
+5. Use the **In-System Memory Content Editor** to verify memory and decryption outputs
+
+---
+
+## Acknowledgments
+
+This lab was originally written by **Prof. Steve Wilton** and adapted for **CPEN 311** at UBC. Special thanks to the TAs for their support and guidance throughout the project.
